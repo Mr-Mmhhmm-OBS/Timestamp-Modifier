@@ -1,4 +1,4 @@
-@media only screen and (hover: none) {
+@media (hover: none) {
     select#select {
         min-height: 0;
         resize: none;
