@@ -4,7 +4,7 @@ h1, h2{
 
 textarea, select {
    width: 100%;
-   min-height: 10em;
+   min-height: 120px;
    resize: vertical;
    font-size: 12px;
 }
