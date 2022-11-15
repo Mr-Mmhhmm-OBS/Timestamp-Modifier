@@ -2,7 +2,7 @@
     select#select {
         min-height: 0;
         resize: none;
-        height: 1em;
+        height: 2em;
     }
 }
 
