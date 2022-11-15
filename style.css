@@ -6,4 +6,5 @@ textarea, select {
    width: 100%;
    min-height: 10em;
    resize: vertical;
+   font-size: 12px;
 }
