@@ -10,13 +10,18 @@ h1, h2{
 }
 
 textarea, select {
-   min-height: 10em;
-   resize: vertical;
-   font-size: 2vh;
+    min-height: 10em;
+    resize: vertical;
+    font-size: 2vh;
+    background-color: #cfc7ba;
 }
 
 html, body, main {
    height: 100%;
+}
+
+html {
+    background-color: #b9ac94;
 }
 
 main{
