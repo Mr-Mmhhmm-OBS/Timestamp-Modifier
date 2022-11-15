@@ -1,4 +1,4 @@
-@media only screen and (max-width: 768px) {
+@media only screen and (max-height: 1200px) and (hover: none) and (pointer: coarse) {
     select#select {
         min-height: 0;
         resize: none;
