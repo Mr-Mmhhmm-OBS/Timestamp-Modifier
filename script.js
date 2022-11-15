@@ -13,13 +13,13 @@ Number.prototype.toHHMMSS = function () {
 $(window).on("load", function () {
 	$("#input").on("change keyup paste", input_TextChanged);
 	$("#select").on("change", selection_Changed);
-	$("#select").on("click", "option",
+	$("#select").on("mousedown", "option",
 		function (e) {
 			e.preventDefault();
 			this.parentElement.focus();
 			this.selected = !this.selected;
 			$("#select").trigger("change");
-			return true;
+			return false;
 		}
 	);
 });
@@ -45,7 +45,7 @@ function input_TextChanged(e) {
 	}
 
 	if (lastLine != null) {
-		$select.append($("<label/>").val("XX:XX:XX " + lastLine[1]));
+		$select.append($("<option/>", { text: "XX:XX:XX " + " " + lastLine[1], selected: true }));
 	}
 	$("#select").trigger("change");
 }
