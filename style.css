@@ -4,9 +4,14 @@ h1, h2{
 
 textarea, select {
    width: 100%;
+   min-height: 10em;
    resize: vertical;
    font-size: 2vh;
    flex: 1 1 auto;
+}
+
+select{
+   flex: 0 0 auto;
 }
 
 html, body, main {
