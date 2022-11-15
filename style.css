@@ -1,4 +1,4 @@
-@media only screen {
+@media (hover: none) and (pointer: coarse) {
     select#select {
         height: 1em;
     }
