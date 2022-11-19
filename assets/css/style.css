@@ -7,6 +7,19 @@
  }
 }
 
+html {
+ background-color: #242424;
+}
+
+main {
+ display: flex;
+ flex-direction: column;
+}
+
+body {
+ margin: 0 1em;
+}
+
 h1, h2 {
  text-align: center;
  margin: 0;
@@ -24,18 +37,5 @@ textarea, select {
  min-height: 10em;
  resize: vertical;
  font-size: 2.3vh;
- background-color: #cfc7ba;
-}
-
-html {
- background-color: #b9ac94;
-}
-
-main {
- display: flex;
- flex-direction: column;
-}
-
-body {
- margin: 0 1em;
+ background-color: #454545;
 }
