@@ -1,0 +1,43 @@
+@import "{{ site.theme }}";
+
+@media (hover: none) {
+ select#select {
+  min-height: 0;
+  resize: none;
+  height: 2em;
+  flex: 0 0 auto;
+ }
+}
+
+h1, h2 {
+ text-align: center;
+ margin: 0;
+}
+
+h1 {
+ font-size: 2.5vh;
+}
+
+h2 {
+ font-size: 2.3vh;
+}
+
+textarea, select {
+ min-height: 10em;
+ resize: vertical;
+ font-size: 2.3vh;
+ background-color: #cfc7ba;
+}
+
+html {
+ background-color: #b9ac94;
+}
+
+main {
+ display: flex;
+ flex-direction: column;
+}
+
+body {
+ margin: 0 1em;
+}
