@@ -1,5 +1,3 @@
-@import "{{ site.theme }}";
-
 @media (hover: none) {
  select#select {
   min-height: 0;

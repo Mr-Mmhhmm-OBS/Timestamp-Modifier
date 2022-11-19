@@ -45,7 +45,7 @@ function input_TextChanged(e) {
 	}
 
 	if (lastLine != null) {
-		$select.append($("<option/>", { text: "XX:XX:XX " + " " + lastLine[1], selected: true }));
+		$select.append($("<option/>", { text: lastLine[1], selected: true }));
 	}
 	$("#select").trigger("change");
 }
@@ -55,8 +55,12 @@ function selection_Changed() {
 	var totalTimespan = 0;
 	for (var item of this) {
 		if (item.selected) {
-			output.push(totalTimespan.toHHMMSS() + " " + item.value.split(" ", 2)[1]);
-			totalTimespan += item.value.split(" ", 1)[0].split(':').reduce((acc, time) => (60 * acc) + +time);
+			var itemSplit = item.value.split(" ", 2);
+
+			output.push(totalTimespan.toHHMMSS() + " " + itemSplit[itemSplit.length - 1]);
+			if (itemSplit.length == 2) {
+				totalTimespan += itemSplit[0].split(':').reduce((acc, time) => (60 * acc) + +time);
+			}
 		}
 	}
 	$("#output").val(output.join('\n'));
